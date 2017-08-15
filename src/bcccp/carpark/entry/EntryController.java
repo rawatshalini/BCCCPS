@@ -30,6 +30,8 @@ public class EntryController
 			ICarSensor is,
 			IEntryUI ui) {
 		//TODO Implement constructor
+JOptionpand.shoeMessageDoialog(null,"Car Detected at the Entry Gate.\n
+Please Press the Button");
 	}
 
 
