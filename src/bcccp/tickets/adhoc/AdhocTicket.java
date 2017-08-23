@@ -60,8 +60,8 @@ public class AdhocTicket implements IAdhocTicket {
 
 	@Override
 	public void pay(long dateTime, float charge) {
-		// TODO Auto-generated method stub
-		
+		this.paidDateTime = dateTime;
+		this.charge = charge;
 	}
 
 
