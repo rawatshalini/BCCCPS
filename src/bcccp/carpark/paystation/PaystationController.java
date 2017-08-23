@@ -40,16 +40,22 @@ public class PaystationController
 
 	@Override
 	public void ticketPaid() {
+		
+		// record payment for current ticket
 		Date dateTime = new Date();
 		this.adhocTicket.pay(dateTime.getTime(), this.charge);
 		
+		// retrieve the current ticket details 
 		String carparkId = this.adhocTicket.getCarparkId();
 		int ticketNo = this.adhocTicket.getTicketNo();
 		long entryDateTime = this.adhocTicket.getEntryDateTime();
 		long paidDateTime = this.adhocTicket.getPaidDateTime();
+		
+		// print ticket for user
 		this.ui.printTicket(carparkId, ticketNo, entryDateTime, paidDateTime, this.charge, this.adhocTicket.getBarcode());
 		
-		this.ui.display("Please collect ticket");
+		// ask user to collect the printed ticket
+		this.ui.display("Please collect your ticket");
 	}
 
 
