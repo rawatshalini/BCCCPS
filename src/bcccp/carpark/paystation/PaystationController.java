@@ -26,7 +26,7 @@ public class PaystationController
 		this.adhocTicket = carpark.getAdhocTicket(barcode);
 		long entryDateTime = adhocTicket.getEntryDateTime();
 		this.charge = carpark.calculateAddHocTicketCharge(entryDateTime);
-		
+		this.ui.display("Amount to be paid for car parking : " + charge);
 	}
 
 
