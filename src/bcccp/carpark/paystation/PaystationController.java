@@ -56,8 +56,7 @@ public class PaystationController
 
 	@Override
 	public void ticketTaken() {
-		// TODO Auto-generated method stub
-		
+		this.adhocTicket = null;
 	}
 
 	
