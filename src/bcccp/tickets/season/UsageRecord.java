@@ -38,8 +38,7 @@ public class UsageRecord implements IUsageRecord {
 
 	@Override
 	public String getSeasonTicketId() {
-		// TODO Auto-generated method stub
-		return null;
+		return ticketId;
 	}
 	
 	
