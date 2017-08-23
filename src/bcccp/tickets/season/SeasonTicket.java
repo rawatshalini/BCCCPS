@@ -69,8 +69,12 @@ public class SeasonTicket implements ISeasonTicket {
 
 	@Override
 	public List<IUsageRecord> getUsageRecords() {
-		// TODO Auto-generated method stub
-		return null;
+		List<IUsageRecord> usageRecords = new ArrayList<IUsageRecord>();
+		for(IUsageRecord record : usages)
+		{
+			usageRecords.add(record);
+		}
+		return usageRecords;
 	}
 
 
