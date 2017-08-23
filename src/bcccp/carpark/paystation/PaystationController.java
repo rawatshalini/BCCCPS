@@ -12,10 +12,10 @@ public class PaystationController
 	private IAdhocTicket  adhocTicket = null;
 	private float charge;
 	
-	//testing again
-
+	
 	public PaystationController(ICarpark carpark, IPaystationUI ui) {
-		//TODO Implement constructor
+		this.carpark = carpark;
+		this.ui = ui;
 	}
 
 
