@@ -2,6 +2,7 @@ package bcccp.carpark.paystation;
 
 import bcccp.carpark.ICarpark;
 import bcccp.tickets.adhoc.IAdhocTicket;
+import java.util.Date;
 
 public class PaystationController 
 		implements IPaystationController {
@@ -39,7 +40,8 @@ public class PaystationController
 
 	@Override
 	public void ticketPaid() {
-		// TODO Auto-generated method stub
+		Date dateTime = new Date();
+		this.adhocTicket.pay(dateTime.getTime(), this.charge);
 		
 	}
 
