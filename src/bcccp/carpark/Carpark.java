@@ -80,8 +80,8 @@ public class Carpark implements ICarpark {
 
 	@Override
 	public IAdhocTicket getAdhocTicket(String barcode) {
-		// TODO Auto-generated method stub
-		return null;
+		IAdhocTicket ticket = this.adhocTicketDAO.findTicketByBarcode(barcode);
+		return ticket;
 	}
 
 
