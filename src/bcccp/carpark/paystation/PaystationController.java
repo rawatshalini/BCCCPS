@@ -42,7 +42,11 @@ public class PaystationController
 	public void ticketPaid() {
 		Date dateTime = new Date();
 		this.adhocTicket.pay(dateTime.getTime(), this.charge);
-		
+		String carparkId = this.adhocTicket.getCarparkId();
+		int ticketNo = this.adhocTicket.getTicketNo();
+		long entryDateTime = this.adhocTicket.getEntryDateTime();
+		long paidDateTime = this.adhocTicket.getPaidDateTime();
+		this.ui.printTicket(carparkId, ticketNo, entryDateTime, paidDateTime, this.charge, this.adhocTicket.getBarcode());
 	}
 
 
