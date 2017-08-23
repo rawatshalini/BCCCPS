@@ -22,10 +22,16 @@ public class PaystationController
 
 	@Override
 	public void ticketInserted(String barcode) {
-		
+		//retrieve ticket by reading barcode
 		this.adhocTicket = carpark.getAdhocTicket(barcode);
+		
+		// get date and time of car entry
 		long entryDateTime = adhocTicket.getEntryDateTime();
+		
+		// calculate charge for the duration of car parking
 		this.charge = carpark.calculateAddHocTicketCharge(entryDateTime);
+		
+		// display the amount for the user
 		this.ui.display("Amount to be paid for car parking : " + charge);
 	}
 
