@@ -51,7 +51,7 @@ public class ExitController
 
 	@Override
 	public void carEventDetected(String detectorId, boolean detected) {
-		// TODO Auto-generated method stub
+		numberOfCarsParked = numberOfCarsParked - 1; // decrement the number of vehicles by 1
 		
 	}
 
