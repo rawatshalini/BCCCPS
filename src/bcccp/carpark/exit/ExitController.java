@@ -40,6 +40,11 @@ this.ExitUI=ExitUI;
 	@Override
 	public void ticketInserted(String ticketStr) {
 		// TODO Auto-generated method stub
+this.ticketInserted;
+this.ticketInserted=ticketIntserted;
+
+
+
 		
 	}
 
