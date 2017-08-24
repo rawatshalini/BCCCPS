@@ -43,7 +43,7 @@ public class ExitController
 
 	@Override
 	public void ticketTaken() {
-		// TODO Auto-generated method stub
+		System.out.println("Take Ticket"); // Take ticket message is displayed in on the control pillar
 		
 	}
 
