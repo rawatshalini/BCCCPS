@@ -37,6 +37,8 @@ public class EntryController
 	@Override
 	public void buttonPushed() {
 		// TODO Auto-generated method stub
+this.buttonpushed;
+this.buttonpushed=bottonpushed;
 		
 	}
 
