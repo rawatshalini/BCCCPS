@@ -35,7 +35,7 @@ public class ExitController
 
 	@Override
 	public void ticketInserted(String ticketStr) {
-		// TODO Auto-generated method stub
+		System.out.println("Insert Ticket"); // insert ticket method is displayed in on the control pillar
 		
 	}
 
