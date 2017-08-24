@@ -52,6 +52,9 @@ public class ExitController
 	@Override
 	public void carEventDetected(String detectorId, boolean detected) {
 		numberOfCarsParked = numberOfCarsParked - 1; // decrement the number of vehicles by 1
+		exitTime = System.currentTimeMillis();  // store the exit time of the customer
+        java.util.Date date=new java.util.Date(millis);  
+
 		
 	}
 
