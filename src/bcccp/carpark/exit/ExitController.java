@@ -27,8 +27,9 @@ public class ExitController
 			ICarSensor is,
 			ICarSensor os, 
 			IExitUI ui) {
-		//TODO Implement constructor
-	}
+		this.carpark = carpark; // assign the value of carpark to carpark
+		this.exitGate = exitGate; // assign the value of exitGate to exitGate
+		}
 
 
 
