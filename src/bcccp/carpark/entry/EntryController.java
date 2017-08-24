@@ -47,6 +47,8 @@ this.buttonpushed=bottonpushed;
 	@Override
 	public void ticketInserted(String barcode) {
 		// TODO Auto-generated method stub
+this.ticketInserted;
+this.ticketInserted=ticketInserted;
 		
 	}
 
