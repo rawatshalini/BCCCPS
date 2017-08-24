@@ -52,8 +52,9 @@ this.ticketInserted=ticketIntserted;
 
 	@Override
 	public void ticketTaken() {
-		// TODO Auto-generated method stub
-		
+		// TODO Auto-generated method stub;en
+this.ticketTaken
+this.ticketTaken=ticketTaken;	
 	}
 
 
