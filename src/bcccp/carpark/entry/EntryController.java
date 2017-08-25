@@ -29,15 +29,19 @@ public class EntryController
 			ICarSensor os, 
 			ICarSensor is,
 			IEntryUI ui) {
-		//TODO Implement constructor
+	
+     this.carpark = carpark; // assign the value of carpark to carpark
+		 this.entryGate = entryGate; // assign the value of entryGate to entryGate
+		 this.outsideSensor = os; // assign the value of os to outsideSensor
+		 this.insideSensor = is; // assign the value of is to insideSensor
+		 this.ui = ui; //assign the value of ui to ui
 	}
 
 
 
 	@Override
 	public void buttonPushed() {
-		// TODO Auto-generated method stub
-		
+		System.out.println("push button"); // push button message will display on the control pillar
 	}
 
 
@@ -52,7 +56,7 @@ public class EntryController
 
 	@Override
 	public void ticketTaken() {
-		// TODO Auto-generated method stub
+		System.out.println("take ticket"); // take ticket message will display on the control pillar
 		
 	}
 
@@ -68,7 +72,7 @@ public class EntryController
 
 	@Override
 	public void carEventDetected(String detectorId, boolean detected) {
-		// TODO Auto-generated method stub
+		numberOfCarsParked = numberOfCarsParked + 1; // decrement the available space by 1
 		
 	}
 
