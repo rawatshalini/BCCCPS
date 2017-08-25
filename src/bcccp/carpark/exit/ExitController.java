@@ -27,7 +27,6 @@ public class ExitController
 			ICarSensor is,
 			ICarSensor os, 
 			IExitUI ui) {
-
 		this.carpark = carpark;
 		this.exitGate = exitGate;
 		this.insideSensor = is;
@@ -38,7 +37,7 @@ public class ExitController
 	@Override
 	public void ticketInserted(String ticketStr) {
 		System.out.println("Insert Ticket"); // insert ticket method is displayed in on the control pillar
-		
+	
 	}
 
 
@@ -46,7 +45,6 @@ public class ExitController
 	@Override
 	public void ticketTaken() {
 		System.out.println("Take Ticket"); // Take ticket message is displayed in on the control pillar
-		
 	}
 
 
