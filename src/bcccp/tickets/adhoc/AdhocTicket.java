@@ -21,9 +21,10 @@ public class AdhocTicket implements IAdhocTicket {
 	}
 
 
+
 	@Override
 	public int getTicketNo() {
-		return ticketNo;
+		return ticketNo; //returns ticketNo
 	}
 
 
@@ -47,7 +48,7 @@ public class AdhocTicket implements IAdhocTicket {
 
 	@Override
 	public long getEntryDateTime() {
-		return entryDateTime;
+		return entryDateTime;//returns entryDateTime
 	}
 
 
@@ -67,7 +68,7 @@ public class AdhocTicket implements IAdhocTicket {
 
 	@Override
 	public long getPaidDateTime() {
-		return paidDateTime;
+		return paidDateTime; //return paidDateTime
 	}
 
 
@@ -82,9 +83,8 @@ public class AdhocTicket implements IAdhocTicket {
 
 	@Override
 	public float getCharge() {
-		return charge;
-	}
-
+		return charge; // returns charge
+		}
 
 	@Override
 	public void exit(long dateTime) {
@@ -95,7 +95,7 @@ public class AdhocTicket implements IAdhocTicket {
 
 	@Override
 	public long getExitDateTime() {
-		return exitDateTime;
+		return exitDateTime; //returns exitDateTime
 	}
 
 

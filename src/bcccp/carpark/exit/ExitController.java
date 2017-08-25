@@ -27,6 +27,7 @@ public class ExitController
 			ICarSensor is,
 			ICarSensor os, 
 			IExitUI ui) {
+
 		this.carpark = carpark;
 		this.exitGate = exitGate;
 		this.insideSensor = is;
@@ -34,11 +35,9 @@ public class ExitController
 		this.ui = ui;
 	}
 
-
-
 	@Override
 	public void ticketInserted(String ticketStr) {
-		// TODO Auto-generated method stub
+		System.out.println("Insert Ticket"); // insert ticket method is displayed in on the control pillar
 		
 	}
 
@@ -46,7 +45,7 @@ public class ExitController
 
 	@Override
 	public void ticketTaken() {
-		// TODO Auto-generated method stub
+		System.out.println("Take Ticket"); // Take ticket message is displayed in on the control pillar
 		
 	}
 
@@ -54,7 +53,10 @@ public class ExitController
 
 	@Override
 	public void carEventDetected(String detectorId, boolean detected) {
-		// TODO Auto-generated method stub
+		numberOfCarsParked = numberOfCarsParked - 1; // decrement the number of vehicles by 1
+		exitTime = System.currentTimeMillis();  // store the exit time of the customer
+        java.util.Date date=new java.util.Date(millis);  
+
 		
 	}
 

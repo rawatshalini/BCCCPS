@@ -18,10 +18,11 @@ public class SeasonTicket implements ISeasonTicket {
 			             String carparkId, 
 			             long startValidPeriod,
 			             long endValidPeriod) {
-		this.ticketId = ticketId;
-		this.carparkId = carparkId;
-		this.startValidPeriod = startValidPeriod;
-		this.endValidPeriod = endValidPeriod;
+		
+		this.ticketId = ticketId; //assign the value of ticketId to ticketId
+		this. carparkId = carparkId; //assign the value of carparkId to carparkId
+		this.startValidPeriod = startValidPeriod;//assign the value of startValidPeriod to startValidPeriod
+		this.endValidPeriod = endValidPeriod//assign the value of  endValidPeriod to endValidPeriod
 	}
 
 	@Override
@@ -30,13 +31,8 @@ public class SeasonTicket implements ISeasonTicket {
 	}
 
 	@Override
-	public String getCarparkId() {
-		return carparkId;
-	}
-
-	@Override
 	public long getStartValidPeriod() {
-		return startValidPeriod;
+    return startValidPeriod;
 	}
 
 	@Override
