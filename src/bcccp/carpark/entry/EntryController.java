@@ -32,6 +32,11 @@ public class EntryController
 		
          this.carpark = carpark; // assign the value of carpark to carpark
 		 this.entryGate = entryGate; // assign the value of entryGate to entryGate
+		 this.outsideSensor = os; // assign the value of os to outsideSensor
+		 this.insideSensor = is; // assign the value of is to insideSensor
+		 this.ui = ui; //assign the value of ui to ui
+
+
 	}
 
 
