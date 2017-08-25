@@ -21,6 +21,8 @@ public class SeasonTicket implements ISeasonTicket {
 		
 		this.ticketId = ticketId; //assign the value of ticketId to ticketId
 		this. carparkId = carparkId; //assign the value of carparkId to carparkId
+		this.startValidPeriod = startValidPeriod;//assign the value of startValidPeriod to startValidPeriod
+		this.endValidPeriod = endValidPeriod//assign the value of  endValidPeriod to endValidPeriod
 	}
 
 	@Override
