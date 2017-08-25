@@ -29,7 +29,9 @@ public class EntryController
 			ICarSensor os, 
 			ICarSensor is,
 			IEntryUI ui) {
-		//TODO Implement constructor
+		
+         this.carpark = carpark; // assign the value of carpark to carpark
+		 this.entryGate = entryGate; // assign the value of entryGate to entryGate
 	}
 
 
