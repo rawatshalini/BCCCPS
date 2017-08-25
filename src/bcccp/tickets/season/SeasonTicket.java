@@ -18,7 +18,9 @@ public class SeasonTicket implements ISeasonTicket {
 			             String carparkId, 
 			             long startValidPeriod,
 			             long endValidPeriod) {
-		//TDO Implement constructor
+		
+		this.ticketId = ticketId; //assign the value of ticketId to ticketId
+		this. carparkId = carparkId; //assign the value of carparkId to carparkId
 	}
 
 	@Override
