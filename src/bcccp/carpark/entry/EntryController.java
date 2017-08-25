@@ -29,7 +29,7 @@ public class EntryController
 			ICarSensor os, 
 			ICarSensor is,
 			IEntryUI ui) {
-		
+	
      this.carpark = carpark; // assign the value of carpark to carpark
 		 this.entryGate = entryGate; // assign the value of entryGate to entryGate
 		 this.outsideSensor = os; // assign the value of os to outsideSensor
@@ -42,7 +42,6 @@ public class EntryController
 	@Override
 	public void buttonPushed() {
 		System.out.println("push button"); // push button message will display on the control pillar
-		
 	}
 
 
