@@ -33,9 +33,8 @@ public class SeasonTicket implements ISeasonTicket {
 
 	@Override
 	public String getCarparkId() {
-		// TODO Auto-generated method stub
-		return null;
-	}
+				return carparkId; //this method returns the carparkId 
+			}
 
 	@Override
 	public long getStartValidPeriod() {
