@@ -14,6 +14,12 @@ public class PaystationController
 	private float charge;
 	
 	
+	/**
+	 * constructor
+	 * 
+	 * @param carpark Instance of ICarpark class 
+	 * @param ui Instance of IPaystationUI class
+	 */
 	public PaystationController(ICarpark carpark, IPaystationUI ui) {
 		this.carpark = carpark;
 		this.ui = ui;
