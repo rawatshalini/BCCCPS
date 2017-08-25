@@ -18,31 +18,30 @@ public class SeasonTicket implements ISeasonTicket {
 			             String carparkId, 
 			             long startValidPeriod,
 			             long endValidPeriod) {
-		//TDO Implement constructor
+		this.ticketId = ticketId;
+		this.carparkId = carparkId;
+		this.startValidPeriod = startValidPeriod;
+		this.endValidPeriod = endValidPeriod;
 	}
 
 	@Override
 	public String getId() {
-		// TODO Auto-generated method stub
-		return null;
+		return ticketId;
 	}
 
 	@Override
 	public String getCarparkId() {
-		// TODO Auto-generated method stub
-		return null;
+		return carparkId;
 	}
 
 	@Override
 	public long getStartValidPeriod() {
-		// TODO Auto-generated method stub
-		return 0;
+		return startValidPeriod;
 	}
 
 	@Override
 	public long getEndValidPeriod() {
-		// TODO Auto-generated method stub
-		return 0;
+		return endValidPeriod;
 	}
 
 	@Override
@@ -65,14 +64,17 @@ public class SeasonTicket implements ISeasonTicket {
 
 	@Override
 	public void endUsage(long dateTime) {
-		// TODO Auto-generated method stub
-		
+		this.endValidPeriod = dateTime;
 	}
 
 	@Override
 	public List<IUsageRecord> getUsageRecords() {
-		// TODO Auto-generated method stub
-		return null;
+		List<IUsageRecord> usageRecords = new ArrayList<IUsageRecord>();
+		for(IUsageRecord record : usages)
+		{
+			usageRecords.add(record);
+		}
+		return usageRecords;
 	}
 
 
