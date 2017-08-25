@@ -27,14 +27,8 @@ public class SeasonTicket implements ISeasonTicket {
 
 	@Override
 	public String getId() {
-		//this method returns the id of season customer 
-		return null;
+		return ticketId;
 	}
-
-	@Override
-	public String getCarparkId() {
-				return carparkId; //this method returns the carparkId 
-			}
 
 	@Override
 	public long getStartValidPeriod() {
@@ -66,14 +60,17 @@ public class SeasonTicket implements ISeasonTicket {
 
 	@Override
 	public void endUsage(long dateTime) {
-		// TODO Auto-generated method stub
-		
+		this.endValidPeriod = dateTime;
 	}
 
 	@Override
 	public List<IUsageRecord> getUsageRecords() {
-		// TODO Auto-generated method stub
-		return null;
+		List<IUsageRecord> usageRecords = new ArrayList<IUsageRecord>();
+		for(IUsageRecord record : usages)
+		{
+			usageRecords.add(record);
+		}
+		return usageRecords;
 	}
 
 

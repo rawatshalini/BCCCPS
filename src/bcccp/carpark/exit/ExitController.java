@@ -27,14 +27,13 @@ public class ExitController
 			ICarSensor is,
 			ICarSensor os, 
 			IExitUI ui) {
-		this.carpark = carpark; // assign the value of carpark to carpark
-		this.exitGate = exitGate; // assign the value of exitGate to exitGate
-		this.insideSensor = is; // assign the value of is to insideSensor
-		this.outsideSensor = os; // assign the value of os to outsideSensor
-		this.ui = ui;//assign the value of ui to ui
-		}
 
-
+		this.carpark = carpark;
+		this.exitGate = exitGate;
+		this.insideSensor = is;
+		this.outsideSensor = os;
+		this.ui = ui;
+	}
 
 	@Override
 	public void ticketInserted(String ticketStr) {
