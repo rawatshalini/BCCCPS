@@ -31,6 +31,7 @@ public class ExitController
 		this.exitGate = exitGate; // assign the value of exitGate to exitGate
 		this.insideSensor = is; // assign the value of is to insideSensor
 		this.outsideSensor = os; // assign the value of os to outsideSensor
+		this.ui = ui;//assign the value of ui to ui
 		}
 
 
