@@ -27,7 +27,11 @@ public class PaystationController
 
 
 
-	@Override
+	/* 
+	 * This method is called when the user inserts ticket in paystation
+	 * 
+	 * @param barcode ticket barcode
+	 */
 	public void ticketInserted(String barcode) {
 		//retrieve ticket by reading barcode
 		this.adhocTicket = carpark.getAdhocTicket(barcode);
