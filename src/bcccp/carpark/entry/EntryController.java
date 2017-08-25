@@ -59,7 +59,7 @@ public class EntryController
 
 	@Override
 	public void ticketTaken() {
-		// TODO Auto-generated method stub
+		System.out.println("take ticket"); // take ticket message will display on the control pillar
 		
 	}
 
