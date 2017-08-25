@@ -15,42 +15,40 @@ public class AdhocTicket implements IAdhocTicket {
 	
 	
 	public AdhocTicket(String carparkId, int ticketNo, String barcode) {
-		//TDO Implement constructor
+		this.carparkId = carparkId;
+		this.ticketNo = ticketNo;
+		this.barcode = barcode;
 	}
+
 
 
 	@Override
 	public int getTicketNo() {
-		// TODO Auto-generated method stub
-		return 0;
+		return ticketNo; //returns ticketNo
 	}
 
 
 	@Override
 	public String getBarcode() {
-		// TODO Auto-generated method stub
-		return null;
+		return barcode;
 	}
 
 
 	@Override
 	public String getCarparkId() {
-		// TODO Auto-generated method stub
-		return null;
+		return carparkId;
 	}
 
 
 	@Override
 	public void enter(long dateTime) {
-		// TODO Auto-generated method stub
-		
+		this.entryDateTime = dateTime;
 	}
 
 
 	@Override
 	public long getEntryDateTime() {
-		// TODO Auto-generated method stub
-		return 0;
+		return entryDateTime;//returns entryDateTime
 	}
 
 
@@ -63,50 +61,50 @@ public class AdhocTicket implements IAdhocTicket {
 
 	@Override
 	public void pay(long dateTime, float charge) {
-		// TODO Auto-generated method stub
-		
+		this.paidDateTime = dateTime;
+		this.charge = charge;
 	}
 
 
 	@Override
 	public long getPaidDateTime() {
-		// TODO Auto-generated method stub
-		return 0;
+		return paidDateTime; //return paidDateTime
 	}
 
 
 	@Override
 	public boolean isPaid() {
-		// TODO Auto-generated method stub
-		return false;
+		if(this.paidDateTime == 0)
+			return false;
+		else
+			return true;
 	}
 
 
 	@Override
 	public float getCharge() {
-		// TODO Auto-generated method stub
-		return 0;
-	}
-
+		return charge; // returns charge
+		}
 
 	@Override
 	public void exit(long dateTime) {
-		// TODO Auto-generated method stub
+		this.exitDateTime = dateTime;
 		
 	}
 
 
 	@Override
 	public long getExitDateTime() {
-		// TODO Auto-generated method stub
-		return 0;
+		return exitDateTime; //returns exitDateTime
 	}
 
 
 	@Override
 	public boolean hasExited() {
-		// TODO Auto-generated method stub
-		return false;
+		if(this.exitDateTime == 0)
+			return false;
+		else
+			return true;
 	}
 
 	
